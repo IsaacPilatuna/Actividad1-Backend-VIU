@@ -1,10 +1,9 @@
-
 <div class="module">
 <?php include("../../../navbar.php")?>
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h1 class="text-center">Agregar Actor</h1>
+                <h1 class="text-center">Agregar Idioma</h1>
             </div>
             <div class="card-body form-container">
                 <form>
@@ -13,16 +12,8 @@
                         <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="nombre">Apellidos</label>
-                        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="nombre">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" id="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="nombre">Nacionalidad</label>
-                        <input type="text" class="form-control" id="nacionalidad" placeholder="Nacionalidad" required>
+                        <label for="nombre">Código ISO</label>
+                        <input type="text" class="form-control" id="codigoISO" placeholder="Código ISO" required>
                     </div>
                 </form>
             </div>

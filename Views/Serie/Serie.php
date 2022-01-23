@@ -6,11 +6,11 @@
                 <h1 class="text-center">Series</h1>
             </div>
             <div class="card-body">
-                <div class="button-container">
+                <a class="button-container" href="./Componentes/Agregar.php">
                     <button class="btn btn-primary">
                         <i class="bi-plus-circle"></i> Agregar
                     </button>
-                </div>
+                </a>
                 <?php include("./Componentes/Tabla.php") ?>
             </div>
         </div>
