@@ -7,9 +7,9 @@
             </div>
             <div class="card-body">
                 <div class="button-container">
-                    <button class="btn btn-primary">
+                    <a class="btn btn-primary" href="./Componentes/Agregar.php">
                         <i class="bi-plus-circle"></i> Agregar
-                    </button>
+                    </a>
                 </div>
                 <?php include("./Componentes/Tabla.php") ?>
             </div>
