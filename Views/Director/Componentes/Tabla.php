@@ -1,6 +1,6 @@
-<?php include("../navbar.php")?>
-<table class="table">
-  <thead>
+
+<table class="table table-bordered">
+  <thead class="thead-light">
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Nombre</th>

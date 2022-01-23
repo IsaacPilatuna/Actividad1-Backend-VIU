@@ -1,0 +1,32 @@
+.thead-light{
+    background-color: lightgray;
+}
+
+.button-container{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.module{
+    min-height: 100vh;
+    background: url("./Images/pattern.png");
+}
+
+.container{
+    margin-top: 1rem;
+}
+
+.card{
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+table.table{
+    max-height: 60vh;
+    overflow-y: auto;
+}

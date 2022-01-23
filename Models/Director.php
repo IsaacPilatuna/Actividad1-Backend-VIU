@@ -8,3 +8,4 @@ class Director
     public $fechaNacimiento;
     public $nacionalidad;
 }
+?>

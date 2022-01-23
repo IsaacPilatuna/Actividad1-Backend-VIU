@@ -1,6 +1,5 @@
-<?php include("../navbar.php")?>
-<table class="table">
-  <thead>
+<table class="table table-bordered">
+  <thead class="thead-light">
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Nombre</th>
@@ -8,7 +7,7 @@
   </thead>
   <tbody>
     <?php 
-      $query = "SELECT * FROM Idioma";
+      $query = "SELECT * FROM Plataforma";
       $results = mysqli_query($conexion, $query);
       while($row = mysqli_fetch_array($results)){ ?>
         <tr>
