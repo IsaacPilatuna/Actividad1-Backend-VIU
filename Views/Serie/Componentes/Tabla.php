@@ -5,6 +5,7 @@
       <th scope="col">Titulo</th>
       <th scope="col">Plataforma</th>
       <th scope="col">Director</th>
+      <th scope="col">Idiomas</th>
       <th scope="col">Acciones</th>
     </tr>
   </thead>
@@ -18,6 +19,17 @@
           <td><?php echo $row['titulo']; ?></td>
           <td><?php echo $row['plataforma']; ?></td>
           <td><?php echo $row['director']; ?></td>
+          <td>
+            <ul>
+            <?php 
+              $query = "SELECT * FROM idiomaSerie JOIN idioma ON idiomaSerie.idIdioma = idioma.id WHERE idSerie=".$row['id'];
+              $idiomas = mysqli_query($conexion, $query);
+              while($idioma = mysqli_fetch_array($idiomas)){
+            ?>
+            <li><?php echo $idioma['nombre'].'- '.$idioma['codigoISO'].' - '.$idioma['tipo']; ?> </li>
+            <?php } ?>
+            </ul>
+          </td>
           <td class="buttons-container"> 
             <a class="btn btn-danger" href="/Controllers/Serie/Eliminar.php?id=<?= $row['id'];?>"> <i class="bi-trash"></i> Eliminar</a> 
            </td>
