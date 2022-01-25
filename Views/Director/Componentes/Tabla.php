@@ -7,6 +7,7 @@
       <th scope="col">Apellidos</th>
       <th scope="col">Fecha de Nacimiento</th>
       <th scope="col">Nacionalidad</th>
+      <th scope="col">Acciones</th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +21,10 @@
           <td><?php echo $row['apellidos']; ?></td>
           <td><?php echo $row['fechaNacimiento']; ?></td>
           <td><?php echo $row['nacionalidad']; ?></td>
+          <td class="buttons-container"> 
+            <a class="btn btn-danger" href="/Controllers/Director/Eliminar.php?id=<?= $row['id'];?>"> <i class="bi-trash"></i> Eliminar</a> 
+            <a class="btn btn-primary" href="./Componentes/Editar.php?id=<?= $row['id'];?>"> <i class="bi-pencil"></i> Editar</a> 
+           </td>
         </tr>
       <?php } ?>
   </tbody>
