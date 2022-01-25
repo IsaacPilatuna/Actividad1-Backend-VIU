@@ -6,19 +6,19 @@
                 <h1 class="text-center">Agregar Idioma</h1>
             </div>
             <div class="card-body form-container">
-                <form>
+                <form id="form" action="/Controllers/Idioma/Agregar.php" method="POST">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="nombre">Código ISO</label>
-                        <input type="text" class="form-control" id="codigoISO" placeholder="Código ISO" required>
+                        <label for="codigoISO">Nombre</label>
+                        <input type="text" class="form-control" id="codigoISO" name="codigoISO" placeholder="Código ISO" required>
                     </div>
                 </form>
             </div>
             <div class="card-footer text-center">
-                <button class="btn btn-success">
+                <button class="btn btn-success" form="form" value="agregar">
                     <i class="bi-plus-circle"></i> Guardar
                 </button>
             </div>
