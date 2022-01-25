@@ -3,6 +3,7 @@
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Nombre</th>
+      <th scope="col">Acciones</th>
     </tr>
   </thead>
   <tbody>
@@ -13,6 +14,10 @@
         <tr>
           <td><?php echo $row['id']; ?></td>
           <td><?php echo $row['nombre']; ?></td>
+          <td class="buttons-container"> 
+            <a class="btn btn-danger" href="/Controllers/Plataforma/Eliminar.php?id=<?= $row['id'];?>"> <i class="bi-trash"></i> Eliminar</a> 
+            <a class="btn btn-primary" href="./Componentes/Editar.php?id=<?= $row['id'];?>"> <i class="bi-pencil"></i> Editar</a> 
+           </td>
         </tr>
       <?php } ?>
   </tbody>
