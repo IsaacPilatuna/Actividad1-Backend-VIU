@@ -26,5 +26,6 @@
         $query = "INSERT INTO idiomaSerie(idSerie, idIdioma, tipo) VALUES ($idSerie, $subtitulo, 'Subtítulos')";
         $resultado = mysqli_query($conexion, $query);
     }
+    mysqli_close($conexion);
     header("Location: /Views/Serie/Serie.php");
 ?>

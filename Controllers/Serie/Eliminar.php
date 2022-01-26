@@ -7,5 +7,6 @@
     $resultado = mysqli_query($conexion, $query);
     $query = "DELETE FROM serie WHERE id=$id"; 
     $resultado = mysqli_query($conexion, $query);
+    mysqli_close($conexion);
     header("Location: /Views/Serie/Serie.php")
 ?>
