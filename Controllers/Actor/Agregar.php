@@ -6,5 +6,6 @@
     $nacionalidad = $_POST['nacionalidad'];
     $query = "INSERT INTO actor(nombre, apellidos, fechaNacimiento, nacionalidad) VALUES ('$nombre','$apellidos','$fechaNacimiento','$nacionalidad')";
     $resultado = mysqli_query($conexion, $query);
+    mysqli_close($conexion);
     header("Location: /Views/Actor/Actor.php")
 ?>
