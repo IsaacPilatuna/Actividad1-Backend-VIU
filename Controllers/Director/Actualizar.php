@@ -7,5 +7,6 @@
     $nacionalidad = $_POST['nacionalidad'];
     $query = "UPDATE director SET nombre='$nombre', apellidos='$apellidos', fechaNacimiento='$fechaNacimiento', nacionalidad='$nacionalidad' WHERE id=$id";
     $resultado = mysqli_query($conexion, $query);
+    mysqli_close($conexion);
     header("Location: /Views/Director/Director.php")
 ?>
