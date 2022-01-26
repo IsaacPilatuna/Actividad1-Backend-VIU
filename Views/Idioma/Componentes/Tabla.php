@@ -9,16 +9,15 @@
   </thead>
   <tbody>
     <?php 
-      $query = "SELECT * FROM Idioma";
-      $results = mysqli_query($conexion, $query);
-      while($row = mysqli_fetch_array($results)){ ?>
+      include($_SERVER['DOCUMENT_ROOT']."/Controllers/Idioma/Lista.php");
+      foreach($idiomas as $idioma){ ?>
         <tr>
-          <td><?php echo $row['id']; ?></td>
-          <td><?php echo $row['nombre']; ?></td>
-          <td><?php echo $row['codigoISO']; ?></td>
+          <td><?php echo $idioma->id; ?></td>
+          <td><?php echo $idioma->nombre; ?></td>
+          <td><?php echo $idioma->codigoISO; ?></td>
           <td class="buttons-container"> 
-            <a class="btn btn-danger" href="/Controllers/Idioma/Eliminar.php?id=<?= $row['id'];?>"> <i class="bi-trash"></i> Eliminar</a> 
-            <a class="btn btn-primary" href="./Componentes/Editar.php?id=<?= $row['id'];?>"> <i class="bi-pencil"></i> Editar</a> 
+            <a class="btn btn-danger" href="/Controllers/Idioma/Eliminar.php?id=<?= $idioma->id;?>"> <i class="bi-trash"></i> Eliminar</a> 
+            <a class="btn btn-primary" href="./Componentes/Editar.php?id=<?= $idioma->id;?>"> <i class="bi-pencil"></i> Editar</a> 
            </td>
         </tr>
       <?php } ?>

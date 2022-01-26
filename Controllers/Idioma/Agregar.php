@@ -4,5 +4,6 @@
     $codigoISO = $_POST['codigoISO'];
     $query = "INSERT INTO idioma(nombre, codigoISO) VALUES ('$nombre','$codigoISO')";
     $resultado = mysqli_query($conexion, $query);
+    mysqli_close($conexion);
     header("Location: /Views/Idioma/Idioma.php")
 ?>
