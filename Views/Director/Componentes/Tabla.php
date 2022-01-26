@@ -12,18 +12,17 @@
   </thead>
   <tbody>
     <?php 
-      $query = "SELECT * FROM Director";
-      $results = mysqli_query($conexion, $query);
-      while($row = mysqli_fetch_array($results)){ ?>
+      include($_SERVER['DOCUMENT_ROOT']."/Controllers/Director/Lista.php");
+      foreach($directores as $director){ ?>
         <tr>
-          <td><?php echo $row['id']; ?></td>
-          <td><?php echo $row['nombre']; ?></td>
-          <td><?php echo $row['apellidos']; ?></td>
-          <td><?php echo $row['fechaNacimiento']; ?></td>
-          <td><?php echo $row['nacionalidad']; ?></td>
+          <td><?php echo $director->id; ?></td>
+          <td><?php echo $director->nombre; ?></td>
+          <td><?php echo $director->apellidos; ?></td>
+          <td><?php echo $director->fechaNacimiento ?></td>
+          <td><?php echo $director->nacionalidad; ?></td>
           <td class="buttons-container"> 
-            <a class="btn btn-danger" href="/Controllers/Director/Eliminar.php?id=<?= $row['id'];?>"> <i class="bi-trash"></i> Eliminar</a> 
-            <a class="btn btn-primary" href="./Componentes/Editar.php?id=<?= $row['id'];?>"> <i class="bi-pencil"></i> Editar</a> 
+            <a class="btn btn-danger" href="/Controllers/Director/Eliminar.php?id=<?= $director->id;?>"> <i class="bi-trash"></i> Eliminar</a> 
+            <a class="btn btn-primary" href="./Componentes/Editar.php?id=<?= $director->id;?>"> <i class="bi-pencil"></i> Editar</a> 
            </td>
         </tr>
       <?php } ?>

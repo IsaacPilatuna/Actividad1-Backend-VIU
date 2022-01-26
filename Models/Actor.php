@@ -15,13 +15,6 @@ class Actor
         $this->fechaNacimiento = $object['fechaNacimiento'];
         $this->nacionalidad = $object['nacionalidad'];
     }
-
-    public function getId(){
-        return $this->id;
-    }
-
-
-
 }
 
 ?>
