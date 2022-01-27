@@ -24,6 +24,8 @@
 .card{
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.9);
+	border: 1px solid lightgray;
+	box-shadow: 4px 4px 8px black;
 }
 
 table.table{
@@ -43,4 +45,8 @@ table.table{
 table.table th{
     width: 10%;
     text-align: center;
+}
+
+.logo{
+    max-height: 128px;
 }

@@ -16,27 +16,32 @@
 <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="btn btn-lg btn-outline-success" href="/Views/Plataforma/Plataforma.php">
+                <a class="btn btn-lg btn-outline-danger" href="/">
+                    <i class="bi-house-fill"></i> Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-lg btn-outline-danger" href="/Views/Plataforma/Plataforma.php">
                     <i class="bi-pc-display"></i> Plataforma
                 </a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-lg btn-outline-success" href="/Views/Actor/Actor.php">
+                <a class="btn btn-lg btn-outline-danger" href="/Views/Actor/Actor.php">
                     <i class="bi-person-badge-fill"></i> Actor
                 </a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-lg btn-outline-success" href="/Views/Director/Director.php">
+                <a class="btn btn-lg btn-outline-danger" href="/Views/Director/Director.php">
                     <i class="bi-person-workspace"></i> Director
                 </a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-lg btn-outline-success" href="/Views/Idioma/Idioma.php">
+                <a class="btn btn-lg btn-outline-danger" href="/Views/Idioma/Idioma.php">
                     <i class="bi-globe"></i> Idioma
                 </a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-lg btn-outline-success" href="/Views/Serie/Serie.php">
+                <a class="btn btn-lg btn-outline-danger" href="/Views/Serie/Serie.php">
                     <i class="bi-film"></i> Serie
                 </a>
             </li>
